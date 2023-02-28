@@ -1,0 +1,5 @@
+1. <c:import> & <c:redirect> 차이
+<c:import> 태그 : <jsp:include>와 기능이 거의 비슷하다, 서블릿 내에서 페이지 내 자원 이외의 외부 서버에서의 자원까지
+		기존 버퍼에서 추가할 수 있는 기능이다.(jsp:include)는 페이지 내부 자원에 한하여 가능.
+<c:redirect> 태그 : response.sendRedirect 메서드와 기능이 동일하다. 응답 헤더에 location 위치를 지정하여 웹브라우저의
+			주체를 해당 location으로 이동하도록 하는 기능이다.

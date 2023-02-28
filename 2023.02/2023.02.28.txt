@@ -1,0 +1,2 @@
+1. MessageLibrary : go(HttpServletResponse response, String url, String target) 메서드에서
+   target이 parent이고 self이고의 차이점..

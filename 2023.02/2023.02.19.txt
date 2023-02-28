@@ -1,0 +1,11 @@
+1. QueryExecutor 사용 시 매개변수로 mapper 받는 경우는 쿼리 작성 시 검색 조건이 없는 경우를 의미한다.
+- 예시
+	회원 전체 목록 조회나 총 회원 명수를 구하는 것등
+	(SELECT * FROM member, SELECT COUNT(*) FROM member)
+- insert의 경우도 마찬가지로 그런 경우는 많지 않지만 내부적으로 쿼리 자체로 그냥 추가 하는 형태도 있을 수 있다.
+  즉, NSERT INTO 작성시 값을 다 고정(전요소에 default 값을 지정)하고 작성하는 경우도 드물지만 있을 수 있다.
+
+2. mapper.xml 내 insert 태그에 keyProperty="userNo" useGeneratedKey="true"
+	- keyProperty : 기본키
+	- useGeneratedKey =" true" : parameterType으로 설정된 데이터 전달용 객체(DTO)에 증감번호로 설정된
+	  항목에 자동 값이 추가

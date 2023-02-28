@@ -1,0 +1,6 @@
+Q1. MemberLoginService 클래스
+- session 내 속성으로 저장 시, member2 변수에 다시 담은 이유는?
+- 검증완료 끝났으면, member 로 바로 대입해도 되는거 아닌가요?
+
+Q2. login.jsp에서 아이디 저장 기능 쿠키로 구현하는 input 태그에서
+	EL식이 cookie.saveId.value 인이유... cookie. saveId == null? 아닌가요??
